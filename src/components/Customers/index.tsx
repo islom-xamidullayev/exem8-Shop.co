@@ -1,10 +1,9 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import "swiper/css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css/pagination";
 import "swiper/css/navigation"; // Navigation uchun stil
-import { Pagination, Navigation } from "swiper/modules"; // Navigation moduli
 
 interface Review {
   _id: number;
@@ -18,7 +17,7 @@ interface Review {
 const ReviewsPage = () => {
   const [reviews, setReviews] = useState<Review[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
-  const [error, setError] = useState<string | null>(null);
+  const [error, ] = useState<string | null>(null);
 
   useEffect(() => {
     const fetchReviews = async () => {

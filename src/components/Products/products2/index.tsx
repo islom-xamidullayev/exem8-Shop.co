@@ -25,7 +25,7 @@ const fetchProducts = async (params: URLSearchParams) => {
 };
 
 const ProductsPage2 = () => {
-  let [searchParams, setSearchParams] = useSearchParams();
+  let [searchParams, ] = useSearchParams();
 
 
   const { data, isLoading, isError } = useQuery({
