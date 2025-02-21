@@ -1,0 +1,251 @@
+@import "tailwindcss";
+
+.container {
+    margin: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    @media (width >= 96rem /* 1536px */) {
+        max-width: 1300px /* 1536px */;
+    }
+}
+
+.hero-text {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.browse-Casual {
+  background-image: url("./assets/photo_.jpg");
+  width: 307px;
+  height: 290px;
+  background-size: cover;
+
+
+  @media  (width >= 500px /* 1536px */) {
+    width: 407px /* 1536px */;
+ }
+}
+
+.browse-Formal {
+  background-image: url("./assets/dress-style-2.png");
+  width: 307px;
+  background-size: cover;
+
+  height: 290px;
+
+  @media  (width >= 500px /* 1536px */) {
+   width: 407px /* 1536px */;
+}
+
+@media  (width >= 900px /* 1536px */) {
+  width: 825px /* 1536px */;
+}
+
+}
+.browse-Gym {
+  background-image: url("./assets/image-14.webp");
+  width: 307px;
+  height: 290px;
+ background-size: cover;
+
+ @media  (width >= 410px /* 1536px */) {
+  width: 407px /* 1536px */;
+
+}
+}
+.browse-Party {
+  background-image: url("./assets/photo_2025-02-21_17-47-26.jpg");
+  width: 307px;
+  height: 290px;
+  background-size: cover;
+
+
+  @media  (width >= 500px /* 1536px */) {
+    width: 407px /* 1536px */;
+ }
+
+ @media  (width >= 900px /* 1536px */) {
+  width: 825px /* 1536px */;
+}
+}
+.btn {
+    padding: 15px 65px; 
+    background-color: black;
+    color: white;
+    border-radius: 60px;
+}
+
+/* From Uiverse.io by Praashoo7 */ 
+.loading {
+    transform: translate(0%, -50%);
+    display: block;
+    margin: 50px;
+    margin-left: 100px;
+}
+  
+  .l {
+    color: black;
+    opacity: 0;
+    animation: op 2s ease-in-out infinite;
+    animation-delay: 0.2s;
+  }
+  
+  .o {
+    color: black;
+    opacity: 0;
+    animation: op 2s ease-in-out infinite;
+    animation-delay: 0.4s;
+  }
+  
+  .a {
+    color: black;
+    opacity: 0;
+    animation: op 2s ease-in-out infinite;
+    animation-delay: 0.6s;
+  }
+  
+  .d {
+    color: black;
+    opacity: 0;
+    animation: op 2s ease-in-out infinite;
+    animation-delay: 0.8s;
+  }
+  
+  .i {
+    color: black;
+    opacity: 0;
+    animation: op 2s ease-in-out infinite;
+    animation-delay: 1s;
+  }
+  
+  .n {
+    color: black;
+    opacity: 0;
+    animation: op 2s ease-in-out infinite;
+    animation-delay: 1.2s;
+  }
+  
+  .g {
+    color: black;
+    opacity: 0;
+    animation: op 2s ease-in-out infinite;
+    animation-delay: 1.4s;
+  }
+  
+  .d1 {
+    color: black;
+    opacity: 0;
+    animation: op1 2s ease-in-out infinite;
+    animation-delay: 1.6s;
+  }
+  
+  .d2 {
+    color: black;
+    opacity: 0;
+    animation: op1 2s ease-in-out infinite;
+    animation-delay: 2s;
+  }
+  
+  .load {
+    position: relative;
+    width: 1.2em;
+    height: 1.2em;
+    border-radius: 50%;
+  }
+  
+  .progress {
+    top: 50%;
+    left: -80%;
+    position: absolute;
+    margin-top: 2.2em;
+    transform: translate(10%, -50%);
+    content: '';
+    width: 3.1em;
+    height: 3.1em;
+    background: transparent;
+    border-radius: 50%;
+    animation: load_37100 2s ease-in-out infinite;
+    animation-delay: 1s;
+  }
+  
+  @keyframes load_37100 {
+    0% {
+      background-color: #DB4437;
+    }
+  
+    25% {
+      background-color: #F4B400;
+    }
+  
+    75% {
+      background-color: #0F9D58;
+    }
+  
+    100% {
+      background-color: #4285F4;
+    }
+  }
+  
+  .progress:nth-child(2) {
+    left: 50%;
+    animation-delay: 1.3s;
+  }
+  
+  .progress:nth-child(3) {
+    left: 180%;
+    animation-delay: 1.7s;
+  }
+  
+  .progress:nth-child(4) {
+    left: 300%;
+    animation-delay: 2s;
+  }
+  
+  @keyframes op {
+    0% {
+      color: black;
+      opacity: 1;
+    }
+  
+    50% {
+      color: green;
+      opacity: 1;
+    }
+  
+    100% {
+      color: black;
+      opacity: 1;
+    }
+  }
+  
+  @keyframes op1 {
+    0% {
+      color: black;
+      opacity: 1;
+    }
+  
+    50% {
+      color: green;
+      opacity: 0;
+    }
+  
+    100% {
+      color: black;
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .animate-fade-in {
+    animation: fade-in 0.3s ease-out;
+  }
+
