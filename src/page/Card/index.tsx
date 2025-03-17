@@ -15,6 +15,7 @@ const CartPage = () => {
 
   return (
     <div className="container  mx-auto py-8 px-4">
+
       <h1 className="font-bold text-[32px] md:text-[40px] text-black uppercase mb-5 md:mb-6 ">
         YOURCART
       </h1>

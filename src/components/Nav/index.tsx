@@ -1,6 +1,10 @@
 import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import SearchInput from './input';
+import Logo from '../../assets/SHOP.CO.svg'
+import Cart from '../../assets/Frame (1).svg'
+import Admin from '../../assets/admin.svg'
+
 import { Menu, X } from 'lucide-react';
 import { useSelector } from 'react-redux';
 import { RootState } from '../../store/store'; // RootState ni import qiling
@@ -20,7 +24,7 @@ function Nav() {
                 </button>
             </div>
             <NavLink to="/">
-                <img src="src/assets/SHOP.CO.svg" alt="Shop Logo" />
+                <img src={Logo} alt="Shop Logo" />
             </NavLink>
 
             <div className="hidden lg:flex items-center gap-5">
@@ -37,11 +41,11 @@ function Nav() {
             <div className="flex">
                 <NavLink to="/cart" className="relative mr-4 p-1 ">
                     
-                    <img src="src/assets/Frame (1).svg" alt="Cart" />
+                    <img src={Cart} alt="Cart" />
                     
                 </NavLink>
                 <NavLink to="/#signin" className="p-1">
-                    <img src="src/assets/admin.svg" alt="Sign In" />
+                    <img src={Admin} alt="Sign In" />
                 </NavLink>
             </div>
 
