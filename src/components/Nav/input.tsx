@@ -1,4 +1,5 @@
 import { InputHTMLAttributes } from "react";
+import Stech from "../../assets/stech.svg"
 
 interface SearchInputProps extends InputHTMLAttributes<HTMLInputElement> {}
 
@@ -6,7 +7,7 @@ const SearchInput: React.FC<SearchInputProps> = (props) => {
   return (
     <div className="hidden md:flex bg-[#F0F0F0] mr-3 lg:mr-10 items-center px-2 rounded-[14px]">
       <img
-        src="src\assets\stech.svg"
+        src={Stech}
         height={20}
         width={20}
         alt="search"

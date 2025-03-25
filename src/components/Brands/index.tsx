@@ -1,16 +1,21 @@
 import React from "react";
+import VersaceLogo from "../../assets/versachi.svg";
+import ZaraLogo from "../../assets/zara-logo-1 1.svg";
+import GucciLogo from "../../assets/gucci-logo-1 1.svg";
+import PradaLogo from "../../assets/prada-logo-1 1.svg";
+import CalvinKleinLogo from "../../assets/Vector (5).svg";
 
 type Brand = {
   id: string;
-  srcUrl: string;
+  src: string;
 };
 
 const brandsData: Brand[] = [
-  { id: "versace", srcUrl: "src/assets/versachi.svg" },
-  { id: "zara", srcUrl: "src/assets/zara-logo-1 1.svg" },
-  { id: "gucci", srcUrl: "src/assets/gucci-logo-1 1.svg" },
-  { id: "prada", srcUrl: "src/assets/prada-logo-1 1.svg" },
-  { id: "calvin-klein", srcUrl: "src/assets/Vector (5).svg" },
+  { id: "versace", src: VersaceLogo },
+  { id: "zara", src: ZaraLogo },
+  { id: "gucci", src: GucciLogo },
+  { id: "prada", src: PradaLogo },
+  { id: "calvin-klein", src: CalvinKleinLogo },
 ];
 
 const Brands: React.FC = () => {
@@ -20,7 +25,7 @@ const Brands: React.FC = () => {
         {brandsData.map((brand) => (
           <div key={brand.id}>
             <img
-              src={brand.srcUrl}
+              src={brand.src}
               alt={brand.id}
               className="h-auto w-auto max-w-[116px] lg:max-w-48 max-h-[26px] lg:max-h-9 my-5 md:my-11"
             />
